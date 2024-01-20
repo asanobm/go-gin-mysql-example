@@ -1,12 +1,17 @@
 package main
 
 import (
+	"go-gin-mysql-example/repo"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+
+	// migrate the schema
+	repo.Migration()
+
 	r := gin.Default()
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
