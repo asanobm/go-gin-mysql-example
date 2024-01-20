@@ -1,4 +1,4 @@
-module go-gin-mysql-example
+module github.com/asanobm/go-gin-mysql-example
 
 go 1.21
 

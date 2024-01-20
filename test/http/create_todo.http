@@ -1,0 +1,9 @@
+POST /todos
+Host: localhost:8080
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "title": "Learn Go",
+    "description": "Learn Go by writing a simple API"
+}
