@@ -4,7 +4,7 @@ services:
   # Mysql 8.0
   database:
     image: mysql:8.0
-    container_name: database
+    container_name: go-database
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
